@@ -1,4 +1,4 @@
-# ⚛️ Masterclass de React
+# ⚛️ Twitter Clone em  React
 
 <img width="400" src="https://user-images.githubusercontent.com/2254731/219364698-e4281309-b996-4de9-8aa7-8db5df9370ba.png" />
 

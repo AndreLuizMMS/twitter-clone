@@ -11,7 +11,7 @@ const Card = ({ data }: Cardprops) => {
   const { url, img, txt } = data;
   return (
     <>
-      <a href={url}>
+      <a href={url} target="_blank">
         <img src={img} />
         <span>{txt}</span>
       </a>

@@ -1,9 +1,21 @@
-import './tweet.scss';
+import { useReducer, useState } from 'react';
+
+import {
+  REDUCER_ACTION_TYPE,
+  initialState,
+  tweetReducer
+} from '../new-tweet/tweetReducer';
+
 import heart from '../../assets/heart.svg';
+import liked from '../../assets/liked.png';
 
-//
+import './tweet.scss';
 
-const Tweet = ({ data }: any) => {
+interface TweetProps {
+  data: any;
+}
+
+const Tweet = ({ data }: TweetProps) => {
   const { avatar, id, likes, name, tweet, user } = data;
 
   return (
@@ -17,7 +29,8 @@ const Tweet = ({ data }: any) => {
         </div>
         <div className="reactions">
           <div className="reac-spec">
-            <img src={heart} alt="" /> <span className="likes">{likes}</span>
+            <img src={heart} className="likes" />
+            <span>{likes}</span>
           </div>
           <div className="reac-spec">
             <img src="" alt="" />

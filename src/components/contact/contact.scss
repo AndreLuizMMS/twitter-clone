@@ -1,25 +1,34 @@
 .contact {
-  border-left: 0.5px solid rgba(128, 128, 128, 0.5);
+  border-left: 0.5px solid rgb(235, 238, 240);
 
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 1rem;
+  // width: 30%;  
 
   .card {
     & img {
-      width: 4rem;
+      width: 2rem;
     }
 
     & a {
       text-decoration: none;
       color: black;
-      font-weight: bold;
+      font-weight: 500;
       font-size: 1rem;
 
       display: flex;
       align-items: center;
       gap: 0.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    a span {
+      display: none;
     }
   }
 }

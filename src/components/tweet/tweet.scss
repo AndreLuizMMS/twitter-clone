@@ -3,13 +3,17 @@
   align-items: start;
   padding: 0.5rem;
 
-  border-bottom: 0.5px solid rgba(128, 128, 128, 0.5);
-  border-left: 0.5px solid rgba(128, 128, 128, 0.5);
+  border-bottom: 0.5px solid rgb(235, 238, 240);
+  border-left: 0.5px solid rgb(235, 238, 240);
 
   .avatar {
     width: 3.5rem;
     padding: 1rem;
     border-radius: 50px;
+  }
+
+  .tweet {
+    margin-top: 10px;
   }
 
   .tweet-info {
@@ -20,17 +24,17 @@
 
     .user-name {
       margin-right: 10px;
-      font-weight: bold;
-      font-size: 16px;
+      font-weight: 500;
+      font-size: 18px;
     }
     .user {
       color: #89a2b8;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 14px;
     }
 
-    .tweet.txt {
-      font-weight: 400;
+    .tweet-txt {
+      font-weight: 500;
       font-size: 16px;
       line-height: 125%;
     }
@@ -47,5 +51,13 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+
+    .likes {
+      cursor: pointer;
+    }
+    .liked {
+      cursor: pointer;
+      width: 1.5rem;
+    }
   }
 }

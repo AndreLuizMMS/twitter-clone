@@ -4,12 +4,13 @@
 
   gap: 1rem;
 
-  width: 14rem;
+  width: 20rem;
   height: 100vh;
   padding: 1rem;
+  margin-left: 5rem;
 
   .tt-logo {
-    width: 30px;
+    width: 50px;
   }
 
   .nav {
@@ -17,7 +18,7 @@
     flex-direction: column;
     align-items: start;
 
-    gap: 1rem;
+    gap: 2rem;
 
     .nav-option {
       display: flex;
@@ -25,17 +26,23 @@
       justify-content: flex-start;
 
       gap: 10px;
+
+      .nav-option-img {
+        width: 2.5rem;
+      }
+
+      .nav-option-txt {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
     }
   }
 
-  .tweeet-btn {
-    background: #1da1f2;
-    color: white;
-    font-weight: bold;
-    padding: 16px 24px;
-    border-radius: 200px;
-    border: none;
 
-    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 4rem;
   }
 }

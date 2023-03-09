@@ -1,3 +1,5 @@
+import './small-sidebar/small-options.scss';
+
 type OptionsProps = {
   image: string;
   text: string;

@@ -7,6 +7,8 @@ interface Cardprops {
   data?: any;
 }
 
+import './contact.scss'
+
 const Card = ({ data }: Cardprops) => {
   const { url, img, txt } = data;
   return (

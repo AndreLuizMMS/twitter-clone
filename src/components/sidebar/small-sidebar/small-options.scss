@@ -1,0 +1,38 @@
+.tweet-btn {
+  background: #1da1f2;
+  color: white;
+  font-weight: bold;
+  padding: 26px 32px;
+  border-radius: 200px;
+  border: none;
+
+  cursor: pointer;
+
+  .pencil {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 1px;
+    align-items: center;
+
+    & span {
+      display: none;
+    }
+  }
+
+  .tweet-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 23px;
+
+    .pencil {
+      display: flex;
+      width: 1.5rem;
+      fill: white;
+    }
+  }
+}

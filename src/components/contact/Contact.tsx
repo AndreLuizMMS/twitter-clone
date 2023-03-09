@@ -32,8 +32,8 @@ const contacts = [
 const Contact = () => {
   return (
     <div className="contact">
-      {contacts.map(ctt => (
-        <div className="card">
+      {contacts.map((ctt, i) => (
+        <div className="card" key={i}>
           <Card data={ctt} />
         </div>
       ))}

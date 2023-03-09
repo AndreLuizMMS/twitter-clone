@@ -1,9 +1,11 @@
 import Options from './Options';
 
+import pencil from '../../assets/pencil.svg'
 import ttLogo from '../../assets/twitterLogo.svg';
 import sidebarImages from './sidebarImages';
 
 import './sidebar.scss';
+
 
 const Sidebar = () => {
   return (
@@ -14,8 +16,9 @@ const Sidebar = () => {
           return <Options image={image} text={text} key={key} />;
         })}
       </div>
-      <button className='tweeet-btn'>
-        Tweet
+      <button className="tweet-btn">
+        <span>Tweet</span>
+        <img src={pencil} className='pencil' />
       </button>
     </div>
   );

@@ -4,7 +4,7 @@
 
   padding: 0.5rem;
 
-  border-left: 0.5px solid rgba(128, 128, 128, 0.5);
+  border-left: 0.5px solid rgb(235, 238, 240);
 
   border-bottom: 10px solid #ebeef0;
 
@@ -37,17 +37,5 @@
   .btn-positioning {
     display: flex;
     justify-content: end;
-
-    .new-tweet-btn {
-      background: #1da1f2;
-      color: white;
-      font-weight: bold;
-      border-radius: 50px;
-      border: none;
-      font-size: 20px;
-      padding: 8px 0;
-
-      width: 30%;
-    }
   }
 }

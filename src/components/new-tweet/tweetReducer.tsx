@@ -12,7 +12,8 @@ type initState = {
 export const initialState: initState[] = tweets;
 
 export const enum REDUCER_ACTION_TYPE {
-  added
+  added,
+  liked
 }
 
 type reducerActions = {
@@ -44,6 +45,7 @@ export const tweetReducer: tweetReducer = (state, action) => {
         ...state
       ];
     }
+
     default:
       throw new Error(`error at ${action.type}`);
   }

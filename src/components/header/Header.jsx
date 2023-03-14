@@ -2,10 +2,10 @@ import sparkle from '../../assets/sparkle.svg';
 
 import './header.scss';
 
-const Header = () => {
+const Header = ({ text }) => {
   return (
     <div className="header">
-      <span className="header-txt">Home</span>
+      <span className="header-txt">{text}</span>
       <img src={sparkle} alt="" className="header-img" />
     </div>
   );

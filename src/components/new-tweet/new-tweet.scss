@@ -1,3 +1,5 @@
+$tt-blue: #1da1f2;
+
 .new-tweet-container {
   display: flex;
   align-items: start;
@@ -34,8 +36,75 @@
     }
   }
 
+  .new-tweet-btn {
+    background: $tt-blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+
+    padding: 0.7rem 1.1rem;
+  }
+
   .btn-positioning {
     display: flex;
     justify-content: end;
+  }
+}
+
+.comment-tweet {
+  border-right: 0.5px solid rgb(235, 238, 240);
+}
+
+.comment-container {
+  display: flex;
+
+  padding: 1.5rem;
+  border-left: 0.5px solid rgb(235, 238, 240);
+  border-bottom: 0.5px solid rgb(235, 238, 240);
+  border-top: 10px solid #ebeef0;
+
+  .comment-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50px;
+  }
+
+  .comment {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .comment-input {
+    width: 80%;
+    color: #5b7083;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+
+    border: none;
+    outline: none;
+    height: 4rem;
+    resize: vertical;
+
+    padding: 1rem;
+  }
+
+  .btn-positioning {
+    display: flex;
+    align-items: center;
+
+    button {
+      background: $tt-blue;
+      color: white;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      border-radius: 50px;
+
+      padding: 0.7rem 1.1rem;
+    }
   }
 }

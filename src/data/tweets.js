@@ -10,7 +10,7 @@ export const tweets = [
     user: '@maykao',
     name: 'Mayk',
     likes: 7,
-    comments: [],
+    liked: false,
     avatar: avatar1,
     id: 0
   },
@@ -19,7 +19,7 @@ export const tweets = [
     user: '@Juju',
     name: 'Julia Stone',
     likes: 4,
-    comments: [],
+    liked: false,
     avatar: avatar2,
     id: 2
   },
@@ -28,7 +28,7 @@ export const tweets = [
     user: '@robert',
     name: 'Robert Julio',
     likes: 42,
-    comments: [],
+    liked: false,
     avatar: avatar3,
     id: 3
   },
@@ -37,7 +37,6 @@ export const tweets = [
     user: '@joel',
     name: 'Joel Campbell',
     likes: 8,
-    comments: [],
     avatar: avatar4,
     id: 4
   },
@@ -46,7 +45,7 @@ export const tweets = [
     user: '@terry',
     name: 'Terick Jhon',
     likes: 12,
-    comments: [],
+    liked: false,
     avatar: avatar5,
     id: 5
   },
@@ -55,7 +54,7 @@ export const tweets = [
     user: '@mark',
     name: 'Marquinho Zuck',
     likes: 1,
-    comments: [],
+    liked: false,
     avatar: avatar1,
     id: 6
   }

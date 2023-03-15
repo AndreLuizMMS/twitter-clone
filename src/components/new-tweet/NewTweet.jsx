@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 
-import { addTweet, addComment } from '../../tweet-reducer/tweet.slice';
+import { addTweet } from '../../reducer/tweet-reducer/tweet.slice';
+import { newComment } from '../../reducer/comments-reducer/comments.slice';
 
 import './new-tweet.scss';
 
@@ -60,7 +61,8 @@ const CommentOnTweet = () => {
   const { idPost } = useParams();
 
   function postComment() {
-    dispatch(addComment({ text: text, id: idPost }));
+    if (text == '') return;
+    dispatch(newComment({ postId: idPost, text: text }));
     setText('');
   }
 

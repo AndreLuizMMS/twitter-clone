@@ -4,6 +4,6 @@
 
 ## Sobre
 
-Esse projeto é um clone da interface de usuário (UI) do Twitter utilizando React que permite ao usuário postar tweets, comentar e reagir useReducer para gerenciar o estado global da aplicação. O projeto é estilizado usando Sass para dar uma aparência semelhante à do Twitter.
+Esse projeto é um clone da interface de usuário (UI) do Twitter utilizando React e Redux ToolKit que permite ao usuário postar tweets, comentar e reagir useReducer para gerenciar o estado global da aplicação. O projeto é estilizado usando Sass para dar uma aparência semelhante à do Twitter.
 
 [Design](https://www.figma.com/community/file/1202694130789327431)
